@@ -303,3 +303,9 @@
         path: ~{{ ansible_user }}/.bashrc
         regexp: '\.\s+<\(kubectl completion bash\)'
         line: ". <(kubectl completion bash)  # Added by k3s-ansible"
+
+    - name: Add kubectl aliases
+      ansible.builtin.lineinfile:
+        path: "/home/{{ admin_account }}/.bashrc"
+        line: "{{ item }}"
+      loop: "{{ vars_alias }}"
