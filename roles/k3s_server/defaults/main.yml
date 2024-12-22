@@ -9,3 +9,16 @@ server_group: server  # noqa var-naming[no-role-prefix]
 agent_group: agent  # noqa var-naming[no-role-prefix]
 use_external_database: false # noqa var-naming[no-role-prefix]
 extra_server_args: "" # noqa var-naming[no-role-prefix]
+
+
+vars_alias:
+  - 'alias k="kubectl"' 
+  - 'alias kgp="kubectl get pods"' 
+  - 'alias kgs="kubectl get svc"' 
+  - 'alias kgn="kubectl get nodes"' 
+  - 'alias kd="kubectl describe"' 
+  - 'alias kl="kubectl logs"' 
+  - 'alias ka="kubectl apply -f"' 
+  - 'alias kc="kubectl config get-contexts"' 
+  - 'alias kx="kubectl exec -it"' 
+  - 'alias kdel="kubectl delete"' 
