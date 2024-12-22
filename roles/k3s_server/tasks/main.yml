@@ -306,6 +306,6 @@
 
     - name: Add kubectl aliases
       ansible.builtin.lineinfile:
-        path: "/home/{{ admin_account }}/.bashrc"
+        path: "/home/{{ ansible_user }}/.bashrc"
         line: "{{ item }}"
       loop: "{{ vars_alias }}"
