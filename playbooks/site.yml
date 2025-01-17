@@ -24,4 +24,4 @@
   hosts: server
   become: true
   roles:
-    - role: ansible-role-helm
+    - role: helm_install
