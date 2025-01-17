@@ -19,3 +19,9 @@
   become: true
   roles:
     - role: k3s_agent
+
+- name: Install helm
+  hosts: server
+  become: true
+  roles:
+    - role: ansible-role-helm
